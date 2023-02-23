@@ -26,11 +26,13 @@ const SignInpage = () => {
         .then((res) => {
           token.setToken(ACCESS_TOKEN_KEY, res.data.access_token);
           setIsLogin(!!token.getToken(ACCESS_TOKEN_KEY));
-          setIsProcessing(false);
           navigate('/todo');
         })
         .catch((err) => {
           alert(err.response.data.log || err.log);
+        })
+        .finally(() => {
+          setIsProcessing(false);
         });
     }
   };

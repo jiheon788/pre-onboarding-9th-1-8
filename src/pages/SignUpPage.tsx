@@ -22,11 +22,13 @@ const SignUpPage = () => {
       postSignUp(signUpdata)
         .then((res) => {
           alert(res.statusText);
-          setIsProcessing(false);
           navigate('/signin');
         })
         .catch((err) => {
           alert(err.response.data.log || err.log);
+        })
+        .finally(() => {
+          setIsProcessing(false);
         });
     }
   };

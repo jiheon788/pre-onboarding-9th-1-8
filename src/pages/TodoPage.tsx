@@ -30,11 +30,14 @@ const TodoPage = () => {
     if (!isProcessing) {
       setIsProcessing(true);
 
-      createTodo(newTodo).then((_) => {
-        loadTodos();
-        setNewTodo({ todo: '' });
-        setIsProcessing(false);
-      });
+      createTodo(newTodo)
+        .then((_) => {
+          loadTodos();
+          setNewTodo({ todo: '' });
+        })
+        .finally(() => {
+          setIsProcessing(false);
+        });
     }
   };
 
