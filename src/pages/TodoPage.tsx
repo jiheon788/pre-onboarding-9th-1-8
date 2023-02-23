@@ -1,7 +1,7 @@
 import { createTodo, getTodos } from '@/api/todos';
+import Todo from '@/components/Todo';
 import useInputs from '@/lib/hooks/useInputs';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 export interface ITodo {
   id: number;
@@ -11,7 +11,7 @@ export interface ITodo {
 }
 
 const TodoPage = () => {
-  const navigate = useNavigate();
+  const [isProcessing, setIsProcessing] = useState(false);
   const [todos, setTodos] = useState([]);
   const [newTodo, onChangeNewTodo, setNewTodo] = useInputs({ todo: '' });
 
@@ -27,21 +27,25 @@ const TodoPage = () => {
 
   const onCreate = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    createTodo(newTodo).then((_) => {
-      loadTodos();
-      setNewTodo({ todo: '' });
-    });
+    if (!isProcessing) {
+      setIsProcessing(true);
+
+      createTodo(newTodo).then((_) => {
+        loadTodos();
+        setNewTodo({ todo: '' });
+        setIsProcessing(false);
+      });
+    }
   };
 
   return (
-    <div className="container my-5">
-      <h1 className="display-5 fw-bold">Todos</h1>
-      <div className="px-4 py-5">
+    <div>
+      <h1>Todos</h1>
+      <div>
         <form onSubmit={onCreate}>
-          <div className="input-group mb-3">
+          <div>
             <input
               type="text"
-              className="form-control"
               placeholder="할 일을 입력해주세요."
               data-testid="new-todo-input"
               name="todo"
@@ -49,14 +53,21 @@ const TodoPage = () => {
               onChange={onChangeNewTodo}
             />
             <button
-              className="btn btn-dark"
               type="submit"
               data-testid="new-todo-add-button"
+              disabled={isProcessing}
             >
               추가
             </button>
           </div>
         </form>
+        <ul>
+          {todos.length === 0 ? (
+            <div>todos is empty :(</div>
+          ) : (
+            todos.map((todo: ITodo) => <Todo key={todo.id} todo={todo} />)
+          )}
+        </ul>
       </div>
     </div>
   );
