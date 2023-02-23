@@ -27,7 +27,7 @@ apiClient.interceptors.request.use((request) => {
   const { method, url } = request;
 
   if (jwtToken) {
-    request.headers['Authorization'] = `Token ${jwtToken}`;
+    request.headers['Authorization'] = `Bearer ${jwtToken}`;
   }
 
   logOnDev(`🚀 [${method?.toUpperCase()}] ${url} | Request`, request);
