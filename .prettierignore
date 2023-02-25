@@ -1,0 +1,7 @@
+# .prettierrc 생성 전에 bolier-plate 완성되어서 무시 함
+.github/pull_request_template.md
+REQUIREMENTS.md
+craco.config.js
+public/index.html
+tsconfig.json
+tsconfig.paths.json
