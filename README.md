@@ -102,6 +102,10 @@ npm start
 - Notion
 - github
 
+### DEMO
+
+![](https://user-images.githubusercontent.com/90181028/218148314-5036b532-a75d-4e87-b0f3-7e542a0ffbca.gif)
+
 ## 파일 구조
 
 ```
@@ -124,10 +128,6 @@ src
     ├── SignUpPage
     └── TodoPage
 ```
-
-### DEMO
-
-![](https://user-images.githubusercontent.com/90181028/218148314-5036b532-a75d-4e87-b0f3-7e542a0ffbca.gif)
 
 ## 팀원 소개
 
