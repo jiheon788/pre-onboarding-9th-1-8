@@ -27,18 +27,18 @@
 
 ## Features
 
-### [--UD todo Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/25)
+#### [--UD todo Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/25)
 
 - 🏆 Best Practice 선정
 - `Update`, `Delete` 기능 파트입니다.
 - 역할에 따라 컴포넌트 나누는 기준을 고려하며 구현하였습니다.
 
-### [CR-- todo Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/13)
+#### [CR-- todo Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/13)
 
 - `Create`, `Read` 기능 파트입니다.
 - 재사용 되는 로직을 함수화하였습니다.
 
-### [Signin / Signup Best Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/3)
+#### [Signin / Signup Best Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/3)
 
 - 🏆 Best Practice 선정
 - `Signin`, `Signup` 기능 파트입니다.
@@ -48,15 +48,21 @@
 
 ## Bug Fixes
 
-### [Path Alias 오류 수정 PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/1)
+#### [Path Alias 오류 수정 PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/1)
 
 - 초기 환경 구성 중 path alias를 사용하기 위한 세팅에 장애가 발생하였고 craco 라이브러리를 사용하여 해결하였습니다.
 
 ## Docs
 
-### [요구 사항 목록](./REQUIREMENTS.md)
+#### [요구 사항 목록](./REQUIREMENTS.md)
 
 - 요구 사항 목록을 작성하여 커밋시마다 체크하는 방식을 제안하였습니다.
+
+## Styles
+
+#### [스타일링 PR](https://github.com/Wanted-PreOnboarding-Team-8/pre-onboarding-9th-1-8/pull/35)
+
+- 전체 페이지의 UI-UX를 구성하였습니다.
 
 <br/>
 
