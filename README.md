@@ -1,19 +1,17 @@
 # 원티프 프리온보딩 인턴쉽 1주차 과제
 
-## [결과물 바로가기](https://wanted-pre-onboarding-team8-1.netlify.app/signin)&nbsp;&nbsp;&nbsp;&nbsp;[백엔드 API](https://github.com/walking-sunset/selection-task)
+### [결과물 바로가기](https://wanted-pre-onboarding-team8-1.netlify.app/signin)&nbsp;&nbsp;&nbsp;&nbsp;[백엔드 API](https://github.com/walking-sunset/selection-task)
 
-[원티드 프리온보딩 프론트엔드 인턴쉽](https://www.wanted.co.kr/events/pre_ob_fe_9?utm_source=email&utm_medium=braze_mkt&utm_campaign=learning_pre_ob_fe_9) 1주차 과제입니다. [가이드라인](https://github.com/walking-sunset/selection-task)과 강의 자료 중 과제 피드백을 준수하였습니다.
+원티드 프리온보딩 프론트엔드 인턴쉽 1주차 과제입니다. [과제 가이드라인](https://github.com/walking-sunset/selection-task)을 준수하였습니다.
 
 이 프로젝트는 [CRA + TypeScript 템플릿](https://create-react-app.dev/docs/adding-typescript/)으로 제작되었습니다.
 
-<br/>
-
-## 과제 목적
+#### 과제 목적
 
 - Todos 어플의 best practice 만들어 제출하기
 - 동료 학습 및 협업 체계 만들기
 
-## 과제 진행 방법
+#### 과제 진행 방법
 
 [기능 구현 목록](/REQUIREMENTS.md)을 작성 후 아래와 같이 분류하였습니다.
 
@@ -21,135 +19,48 @@
 2. CR-- todo
 3. --UD todo
 
-분류에 따라 팀원 개개인이 과제를 수행했습니다. 그리고 각자가 수행한 과제를 가지고 토론을 진행했습니다. 투표를 통해 Best Practice를 선정한 후, 다른 과제 중 좋았던 구현들을 의논하여 추가하였습니다. [이슈](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/issues)와 [PR메시지](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pulls)를 활용하여 문서화하였습니다.
+분류에 따라 팀원 개개인이 수행한 과제를 통해 토론을 진행했습니다. 투표를 통해 Best Practice를 선정한 후, 다른 과제 중 좋았던 구현들을 의논하여 추가하였습니다. [이슈](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/issues)와 [PR메시지](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pulls)를 활용하여 문서화하였습니다.
 
 <br/>
 
-## My Part
+# What Did I Do
 
-### Features
+## Features
 
-- [--UD todo Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/25) - 🏆 Best Practice 선정
-- [CR-- todo Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/13)
-- [Signin / Signup Best Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/3) - 🏆 Best Practice 선정
+### [--UD todo Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/25)
 
-### Bug Fixes
+- 🏆 Best Practice 선정
+- `Update`, `Delete` 기능 파트입니다.
+- 역할에 따라 컴포넌트 나누는 기준을 고려하며 구현하였습니다.
 
-- [Path Alias 오류 수정 PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/1)
+### [CR-- todo Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/13)
 
-<br/>
+- `Create`, `Read` 기능 파트입니다.
+- 재사용 되는 로직을 함수화하였습니다.
 
-## Team History
+### [Signin / Signup Best Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/3)
 
-### Features Best Practice
+- 🏆 Best Practice 선정
+- `Signin`, `Signup` 기능 파트입니다.
+- Custom Hook, Router 할당 자동화, Axios interceptors를 사용해 반복되는 작업을 줄였습니다.
+- Context API와 토큰 클래스, Axios interceptors를 통해 인증&인가 횡단 관심사 처리하였습니다.
+- HOC(고차 함수 컴포넌트)를 사용하여 로그인 여부에 따른 리다이렉트 기능을 구현했습니다.
 
-- **Feb 24, 2023**  　|　[--UD todo Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/25)
+## Bug Fixes
 
-  - 컴포넌트 단위를 가장 적절하게 나눈 점
+### [Path Alias 오류 수정 PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/1)
 
-- **Feb 23, 2023**  　|　[CR-- todo Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/11)
+- 초기 환경 구성 중 path alias를 사용하기 위한 세팅에 장애가 발생하였고 craco 라이브러리를 사용하여 해결하였습니다.
 
-  - 재사용될 타입들을 파일로 분리해서 관리한 점
-  - 컴포넌트 단위를 가장 적절하게 나눈 점
+## Docs
 
-- **Feb 23, 2023**  　|　[Signin / Signup Best Practice PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/3)
+### [요구 사항 목록](./REQUIREMENTS.md)
 
-  - router 할당을 자동화 시킨 점
-  - axios interceptors를 통해 token 및 에러 처리를 진행한 점
-  - React.lazy와 Suspense를 통한 컴포넌트 코드 스플리팅한 점
-  - 토론을 거쳐 나온 프로젝트 구조(파일과 컴포넌트)에 가장 가까웠던 점
-  - 커스텀 훅을 사용해 간결하게 코드를 정리한 점
-
-### Issue
-
-- **Feb 23, 2023**  　|　[개발 툴 차이에 따른 lint 적용 이슈 해결](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/11/commits/d995d1cf6607353e4dc288cf9e832b58bb542147)
-
-- **Feb 23, 2023**  　|　[Path Alias 오류 수정 PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/1)
+- 요구 사항 목록을 작성하여 커밋시마다 체크하는 방식을 제안하였습니다.
 
 <br/>
 
-## 설치 및 실행 가이드
-
-#### Install
-
-```
-npm i
-```
-
-#### Build
-
-```
-npm run build
-```
-
-#### Start
-
-```
-npm start
-```
-
-<br/>
-
-## 기능
-
-- Authenticate users via JWT (sign in, sign up, logout)
-- Validation sign in, sign up
-- Redirect processing based on login
-- CRUD Todos
-
-<br/>
-
-## 기술 스택
-
-- React
-- Typescript
-- axios
-- react-router-dom
-- bootstrap
-- craco
-
-<br/>
-
-## 협업 툴
-
-- Discord
-- Notion
-- github
-
-<br/>
-
-### DEMO
-
-![](https://user-images.githubusercontent.com/90181028/218148314-5036b532-a75d-4e87-b0f3-7e542a0ffbca.gif)
-
-<br/>
-
-## 파일 구조
-
-```
-public
-src
-├── api // 서버 함수
-│   ├── auth
-│   └── todo
-├── components // 재사용 컴포넌트
-│   ├── HOC
-│   └── todo
-├── constants // 상수
-├── contexts // 전역 state
-├── lib
-│   ├── hooks // 커스텀 훅
-│   └── utils // 유틸 함수
-└── pages // 페이지 컴포넌트
-    ├── HomePage
-    ├── SignInPage
-    ├── SignUpPage
-    └── TodoPage
-```
-
-<br/>
-
-## 팀원 소개
+# Team
 
 <table border>
   <tbody>
@@ -215,3 +126,88 @@ src
      </tr>
   </tbody>
 </table>
+
+<br/>
+
+# Team History
+
+## Features Best Practice
+
+- Feb 24, 2023 | [--UD todo Practice Best Practice](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/25)
+- Feb 23, 2023 | [CR-- todo Practice Best Practice](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/11)
+- Feb 23, 2023 | [Signin / Signup Best Practice Best Practice](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/3)
+
+## Issue
+
+- Feb 23, 2023 | [개발 툴 차이에 따른 lint 적용 이슈 해결](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/11/commits/d995d1cf6607353e4dc288cf9e832b58bb542147)
+- Feb 23, 2023 | [Path Alias 오류 수정 PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/1)
+
+<br/>
+
+# Getting Started
+
+#### Install
+
+```
+npm i
+```
+
+#### Build
+
+```
+npm run build
+```
+
+#### Start
+
+```
+npm start
+```
+
+<br/>
+
+# Features
+
+- Authenticate users via JWT (sign in, sign up, logout)
+- Validation sign in, sign up
+- Redirect processing based on login
+- CRUD Todos
+
+<br/>
+
+# Tech Stack
+
+`React`, `Typescript`, `Axios`, `React-router-dom`, `Bootstrap`, `craco`
+
+Collaboration Tool: `Discord`, `Notion`, `Github`
+
+<br/>
+
+# DEMO
+
+![DEMO](https://user-images.githubusercontent.com/90181028/218148314-5036b532-a75d-4e87-b0f3-7e542a0ffbca.gif)
+
+<br/>
+
+# Directory
+
+```
+public
+src
+├── api // 서버 함수
+│   ├── auth
+│   └── todo
+├── components // 재사용 컴포넌트
+│   ├── HOC
+│   └── todo
+├── constants // 상수
+├── contexts // 전역 state
+├── lib
+│   ├── hooks // 커스텀 훅
+│   └── utils // 유틸 함수
+└── pages // 페이지 컴포넌트
+    ├── HomePage
+    ├── SignInPage
+    ├── SignUpPage
+    └── TodoPage
+```
