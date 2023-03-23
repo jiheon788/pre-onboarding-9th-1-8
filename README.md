@@ -6,6 +6,8 @@
 
 이 프로젝트는 [CRA + TypeScript 템플릿](https://create-react-app.dev/docs/adding-typescript/)으로 제작되었습니다.
 
+<br/>
+
 ## 과제 목적
 
 - Todos 어플의 best practice 만들어 제출하기
@@ -21,6 +23,8 @@
 
 분류에 따라 팀원 개개인이 과제를 수행했습니다. 그리고 각자가 수행한 과제를 가지고 토론을 진행했습니다. 투표를 통해 Best Practice를 선정한 후, 다른 과제 중 좋았던 구현들을 의논하여 추가하였습니다. [이슈](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/issues)와 [PR메시지](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pulls)를 활용하여 문서화하였습니다.
 
+<br/>
+
 ## My Part
 
 ### Features
@@ -32,6 +36,8 @@
 ### Bug Fixes
 
 - [Path Alias 오류 수정 PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/1)
+
+<br/>
 
 ## Team History
 
@@ -60,6 +66,8 @@
 
 - **Feb 23, 2023**  　|　[Path Alias 오류 수정 PR](https://github.com/Wanted-PreOnboarding-Team-8/wanted-pre-onboarding-frontend-1/pull/1)
 
+<br/>
+
 ## 설치 및 실행 가이드
 
 #### Install
@@ -80,12 +88,16 @@ npm run build
 npm start
 ```
 
+<br/>
+
 ## 기능
 
 - Authenticate users via JWT (sign in, sign up, logout)
 - Validation sign in, sign up
 - Redirect processing based on login
 - CRUD Todos
+
+<br/>
 
 ## 기술 스택
 
@@ -96,15 +108,21 @@ npm start
 - bootstrap
 - craco
 
+<br/>
+
 ## 협업 툴
 
 - Discord
 - Notion
 - github
 
+<br/>
+
 ### DEMO
 
 ![](https://user-images.githubusercontent.com/90181028/218148314-5036b532-a75d-4e87-b0f3-7e542a0ffbca.gif)
+
+<br/>
 
 ## 파일 구조
 
@@ -128,6 +146,8 @@ src
     ├── SignUpPage
     └── TodoPage
 ```
+
+<br/>
 
 ## 팀원 소개
 
